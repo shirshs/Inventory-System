@@ -4,7 +4,7 @@
 <head>
 <title>Item Master Entry</title>
 </head>
-<body>
+<body bgcolor="#E6E6FA">
 <h1>INVENTORY SYSTEM</h1> 
 <h1>Add / Delete / List Item</h1>
  <s:actionerror/>
