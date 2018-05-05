@@ -9,7 +9,7 @@
 <h1>Add / Delete / List Item</h1>
  <s:actionerror/>
  
-<s:form action="add" method="post">
+<s:form bgcolor="#BB8FCE" action="add" method="post">
 <s:textfield name="item.item_name" label="Item Name"/>
 <s:textfield name="item.category" label="Category"/>
 <s:textfield name="item.price" label="Price"/>
