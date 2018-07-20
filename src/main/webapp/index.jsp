@@ -5,45 +5,45 @@
 <title>Item Master Entry</title>
 </head>
 <body bgcolor="#E6E6FA">
-<h1>INVENTORY SYSTEM</h1> 
-<h1>Add / Delete / List Item</h1>
- <s:actionerror/>
- 
-<s:form bgcolor="#BB8FCE" action="add" method="post">
-<s:textfield name="item.item_name" label="Item Name"/>
-<s:textfield name="item.category" label="Category"/>
-<s:textfield name="item.price" label="Price"/>
-<s:textfield name="item.quantity" label="Quantity"/>
- 
-<s:submit value="Add Item" align="center"/>
-</s:form>
- 
-<s:form action="list" method="post">
-<s:submit value="List items" align="center"/>
-</s:form>
- 
-<h2>Items in Master</h2>
-<table border="1">
-<tr>
-<th>Item Code</th>
-<th>Item Name</th>
-<th>Category</th>
-<th>Price</th>
-<th>Quantity</th>
-<th>Action</th>
-</tr>
-<s:iterator value="itemList" var="items">
-<tr>
-<td><s:property value="id"/></td>
-<td><s:property value="item_name"/></td>
-<td><s:property value="category"/></td>
-<td><s:property value="price"/></td>
-<td><s:property value="quantity"/></td>
-<td><a href="delete?id=<s:property value="id"/>">delete</a></td>
-</tr>
-</s:iterator>
-</table> 
- 
+	<h1>INVENTORY SYSTEM</h1>
+	<h1>Add / Delete / List Item</h1>
+	<s:actionerror />
+
+	<s:form bgcolor="#BB8FCE" action="add" method="post">
+		<s:textfield name="item.item_name" label="Item Name" />
+		<s:textfield name="item.category" label="Category" />
+		<s:textfield name="item.price" label="Price" />
+		<s:textfield name="item.quantity" label="Quantity" />
+
+		<s:submit value="Add Item" align="center" />
+	</s:form>
+
+	<s:form action="list" method="post">
+		<s:submit value="List items" align="center" />
+	</s:form>
+
+	<h2>Items in Master</h2>
+	<table border="1">
+		<tr>
+			<th>Item Code</th>
+			<th>Item Name</th>
+			<th>Category</th>
+			<th>Price</th>
+			<th>Quantity</th>
+			<th>Action</th>
+		</tr>
+		<s:iterator value="itemList" var="items">
+			<tr>
+				<td><s:property value="id" /></td>
+				<td><s:property value="item_name" /></td>
+				<td><s:property value="category" /></td>
+				<td><s:property value="price" /></td>
+				<td><s:property value="quantity" /></td>
+				<td><a href="delete?id=<s:property value="id"/>">delete</a></td>
+			</tr>
+		</s:iterator>
+	</table>
+
 
 </body>
 </html>
