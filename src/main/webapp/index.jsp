@@ -32,7 +32,7 @@
 			<th>Quantity</th>
 			<th>Action</th>
 		</tr>
-		<s:iterator value="itemList" var="items">
+		<s:iterator value="itemList" var="items1">
 			<tr>
 				<td><s:property value="id" /></td>
 				<td><s:property value="item_name" /></td>

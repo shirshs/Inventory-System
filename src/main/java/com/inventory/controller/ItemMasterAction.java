@@ -20,7 +20,7 @@ public class ItemMasterAction extends ActionSupport {
   }
 
   public void setItem(ItemMaster item) {
-    this.item = item;
+	 this.item = item;
   }
 
   public ItemMasterAction() {

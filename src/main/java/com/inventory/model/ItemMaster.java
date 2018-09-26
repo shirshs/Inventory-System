@@ -16,7 +16,13 @@ import javax.persistence.TemporalType;
 @Table(name = "Items")
 public class ItemMaster implements Serializable {
 
-  private static final long serialVersionUID = 2594899692271893943L;
+  @Override
+	public String toString() {
+		return "ItemMaster [id=" + id + ", item_name=" + item_name + ", category=" + category + ", price=" + price
+				+ ", quantity=" + quantity + ", created=" + created + "]";
+	}
+
+private static final long serialVersionUID = 2594899692271893943L;
 
   @Id
   @GeneratedValue
